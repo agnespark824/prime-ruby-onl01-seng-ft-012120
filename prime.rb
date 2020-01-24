@@ -3,6 +3,8 @@ def prime?(number)
     false
   elsif number == 0
     false
+  elsif number == 1
+    false
   else
     array = (2...number).to_a
     array.all? {|n| number % n != 0}
